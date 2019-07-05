@@ -1,6 +1,6 @@
 # Components
 ## public_html
-Contains static files that will be uploaded to AWS
+Contains code related to the website itself
 ## terraform_robertclarke
 Contains Terraform files for managing deployment of AWS infrastructure
 ## aws_deploy.sh
