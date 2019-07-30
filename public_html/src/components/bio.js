@@ -51,7 +51,7 @@ const Bio = () => {
         }}
       />
       <p>
-        I'm a security engineer @ Oracle. Tweet me on <a href="https://twitter.com/robertjfclarke">Twitter</a>.
+        Currently engineering <a href="https://www.linkedin.com/in/robertjfclarke/">at Oracle</a>. I like to document my travels on <a href="https://www.instagram.com/robertjfclarke/">Instagram</a> and share my thoughts on <a href="https://twitter.com/robertjfclarke">Twitter</a>.
       </p>
     </div>
   )
