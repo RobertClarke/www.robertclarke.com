@@ -2,6 +2,8 @@
 
 echo "Moving to ./public_html"
 cd ./public_html
+echo "Running npm install"
+npm install
 echo "Running gatsby clean"
 gatsby clean
 echo "Running gatsby build"
