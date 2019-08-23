@@ -199,6 +199,11 @@ brew tap cjbassi/gotop
 brew install gotop
 
 
+# Git configure
+git config --global user.name "Robert Clarke"
+git config --global user.email "robert@rjfc.net"
+
+
 ### Python
 brew install python
 brew install pyenv
