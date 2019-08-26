@@ -246,8 +246,9 @@ brew cask install zoomus
 brew cask install signal
 
 
-### Music and Video
+### Music, Video and Photo
 brew cask install vlc
+brew cask install adobe-creative-cloud
 
 
 ### Run Brew Cleanup
