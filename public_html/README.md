@@ -13,7 +13,7 @@ npm install -g gatsby-cli
 
 ```
 
-Build static files. Output will be sent to 
+Build static files.
 ```
 gatsby build
 ```
