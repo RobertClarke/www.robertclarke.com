@@ -219,7 +219,6 @@ brew cask install sublime-text
 ### Productivity
 brew cask install google-chrome
 brew cask install dropbox
-
 brew cask install betterzip
 brew cask install caffeine  # keep computer from sleeping
 brew cask install muzzle # hide notifications while screen sharing
@@ -249,6 +248,10 @@ brew cask install signal
 ### Music, Video and Photo
 brew cask install vlc
 brew cask install adobe-creative-cloud
+
+
+### Cryptocurrency and Bitcoin
+brew cask install electrum
 
 
 ### Run Brew Cleanup
