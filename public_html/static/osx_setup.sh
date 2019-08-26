@@ -223,6 +223,9 @@ brew cask install betterzip
 brew cask install caffeine  # keep computer from sleeping
 brew cask install muzzle # hide notifications while screen sharing
 brew cask install cryptomator
+brew cask install veracrypt
+brew cask install rescuetime
+brew cask install proxifier
 
 
 ### Keyboard & Mouse
@@ -243,6 +246,8 @@ brew cask install slack
 brew cask install microsoft-teams
 brew cask install zoomus
 brew cask install signal
+brew cask install skype
+brew cask install discord
 
 
 ### Music, Video and Photo
@@ -298,6 +303,9 @@ if [ "$response" != "${response#[Yy]}" ]
 then
 	mas install 441258766  # Magnet
 	mas install 960276676 # taurine
+  mas install 924726344 # deliveries
+  mas install 1354318707 # core tunnel
+  mas install 1354319581 # core shell
 else
 	cecho "App Store login not complete. Skipping installing App Store Apps" $red
 fi
