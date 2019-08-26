@@ -218,6 +218,7 @@ brew cask install sublime-text
 
 ### Productivity
 brew cask install google-chrome
+brew cask install microsoft-office
 brew cask install dropbox
 brew cask install betterzip
 brew cask install caffeine  # keep computer from sleeping
