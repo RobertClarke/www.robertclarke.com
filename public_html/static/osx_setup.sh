@@ -248,6 +248,9 @@ brew cask install signal
 ### Music, Video and Photo
 brew cask install vlc
 brew cask install adobe-creative-cloud
+brew cask install spotify
+brew tap homebrew/cask-drivers
+brew cask install sonos
 
 
 ### Cryptocurrency and Bitcoin
