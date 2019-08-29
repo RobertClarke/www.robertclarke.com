@@ -13,7 +13,7 @@ buildGatsby:
   script:
     - cd public_html
     - npm install
-    - ./public_html/node_modules/.bin/gatsby build
+    - ./node_modules/.bin/gatsby build
   artifacts:
     paths:
     - public_html/public
