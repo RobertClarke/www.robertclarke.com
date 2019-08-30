@@ -1,6 +1,6 @@
 ---
 title: "Apple needs to remove mandatory SMS-based TFA"
-date: "2019-08-7"
+date: "2019-08-07"
 description: "Apple needs to remove mandatory SMS-based TFA"
 ---
 
