@@ -1,3 +1,8 @@
+# www.robertclarke.com
+[![Build Status](https://gitlab.com/robertjfclarke/www-robertclarke-com/badges/master/pipeline.svg)](https://gitlab.com/robertjfclarke/www-robertclarke-com/-/jobs)
+
+This repo contains code necessary to operate www.robertclarke.com.
+
 # Components
 ## public_html
 Contains code related to the website itself
