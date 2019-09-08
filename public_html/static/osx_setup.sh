@@ -466,3 +466,9 @@ read response
 if [ "$response" != "${response#[Yy]}" ] ;then
     softwareupdate -i -a --restart
 fi
+
+#############################################
+### Todo
+#############################################
+
+### DNS over https (Cloudflared)
