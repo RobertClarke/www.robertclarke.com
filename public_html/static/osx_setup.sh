@@ -221,7 +221,6 @@ brew cask install google-chrome
 brew cask install microsoft-office
 brew cask install dropbox
 brew cask install betterzip
-brew cask install caffeine  # keep computer from sleeping
 brew cask install muzzle # hide notifications while screen sharing
 brew cask install cryptomator
 brew cask install veracrypt
@@ -264,7 +263,7 @@ brew cask install sonos
 brew cask install electrum
 
 ### Add applications to login items
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Caffeine.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Taurine.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Dropbox.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Scroll Reverser.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Magnet.app", hidden:false}'
