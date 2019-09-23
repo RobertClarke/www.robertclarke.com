@@ -13,10 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+    - uses: actions/setup-node@v1
     - name: npm install, build, and test
       run: |
         cd ./public_html
@@ -24,8 +21,10 @@ jobs:
         npm run build --if-present
         npm test
         ./node_modules/.bin/gatsby build
-      env:
-        CI: true
+    - uses: actions/upload-artifact@master
+    - name: gatsby build
+      run: |
+        ./node_modules/.bin/gatsby build
     - uses: actions/upload-artifact@master
       with:
         name: artifacts
