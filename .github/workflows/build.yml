@@ -22,6 +22,7 @@ jobs:
         npm test
     - name: gatsby build
       run: |
+        cd ./public_html
         ./node_modules/.bin/gatsby build
     - uses: actions/upload-artifact@master
       with:
