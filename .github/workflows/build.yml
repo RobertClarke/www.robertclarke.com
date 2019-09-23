@@ -28,5 +28,5 @@ jobs:
         CI: true
     - uses: actions/upload-artifact@master
       with:
-      name: artifacts
-      path: ./public_html/public
+        name: artifacts
+        path: ./public_html/public
