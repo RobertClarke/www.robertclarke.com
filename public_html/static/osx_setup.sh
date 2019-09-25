@@ -197,6 +197,7 @@ brew install iotop
 brew install htop
 brew tap cjbassi/gotop
 brew install gotop
+brew install pre-commit
 
 
 # Git configure
