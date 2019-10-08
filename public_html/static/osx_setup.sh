@@ -215,6 +215,7 @@ brew cask install visual-studio-code
 brew cask install pycharm
 brew cask install webstorm
 brew cask install sublime-text
+brew cask install fork
 
 
 ### Productivity
