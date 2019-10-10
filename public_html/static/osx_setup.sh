@@ -231,7 +231,7 @@ brew cask install proxifier
 
 ### Keyboard & Mouse
 brew cask install scroll-reverser  # allow natural scroll for trackpad, not for mouse
-defaults write com.pilotmoon.scroll-reverser PrefsReverseTrackpad -bool false
+defaults write com.pilotmoon.scroll-reverser ReverseTrackpad -bool false
 
 
 ### Quicklook plugins https://github.com/sindresorhus/quick-look-plugins
