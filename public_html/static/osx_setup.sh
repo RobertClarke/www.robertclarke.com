@@ -262,6 +262,7 @@ brew cask install sonos
 
 ### Cryptocurrency and Bitcoin
 brew cask install electrum
+brew cask install trezor-bridge
 
 ### Add applications to login items
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Taurine.app", hidden:false}'
