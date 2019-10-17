@@ -176,6 +176,8 @@ brew install awscli
 
 ### NPM
 brew install node
+brew install nvm
+mkdir ~/.nvm
 npm install -g n
 npm install -g webpack
 npm install -g webpack-cli
