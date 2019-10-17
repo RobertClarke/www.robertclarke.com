@@ -169,6 +169,8 @@ brew install ispell
 brew cask install docker
 brew install postgresql
 brew install redis
+brew cask install mongodb
+brew cask install robo-3t
 brew install terraform
 brew install go
 brew install webpack
