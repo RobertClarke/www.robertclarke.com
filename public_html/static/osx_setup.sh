@@ -236,7 +236,7 @@ brew cask install proxifier
 
 ### Keyboard & Mouse
 brew cask install scroll-reverser  # allow natural scroll for trackpad, not for mouse
-defaults write com.pilotmoon.scroll-reverser PrefsReverseTrackpad -bool false
+defaults write com.pilotmoon.scroll-reverser ReverseTrackpad -bool false
 
 
 ### Quicklook plugins https://github.com/sindresorhus/quick-look-plugins
@@ -267,6 +267,7 @@ brew cask install sonos
 
 ### Cryptocurrency and Bitcoin
 brew cask install electrum
+brew cask install trezor-bridge
 
 ### Add applications to login items
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Taurine.app", hidden:false}'

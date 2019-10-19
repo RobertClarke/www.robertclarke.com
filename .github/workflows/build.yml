@@ -9,23 +9,21 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [10.15.3]
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+    - uses: actions/setup-node@v1
     - name: npm install, build, and test
       run: |
         cd ./public_html
         npm install
         npm run build --if-present
         npm test
+    - name: gatsby build
+      run: |
+        cd ./public_html
         ./node_modules/.bin/gatsby build
-      env:
-        CI: true
     - uses: actions/upload-artifact@master
       with:
         name: artifacts
