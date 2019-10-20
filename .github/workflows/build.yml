@@ -28,4 +28,4 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: "us-east-1"
         FROM_PATH: "./public_html/public/"
-        DEST_PATH: "s3://www.robertclarke.com/"f
+        DEST_PATH: "s3://www.robertclarke.com/"
