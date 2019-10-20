@@ -1,3 +1,4 @@
+# Good linter: http://www.yamllint.com/
 name: CD/CD
 on: 
   push:
