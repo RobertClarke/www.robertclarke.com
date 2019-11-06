@@ -167,6 +167,7 @@ brew install ispell
 
 ### Development
 brew cask install docker
+brew install docker-compose
 brew install postgresql
 brew install redis
 brew cask install mongodb
