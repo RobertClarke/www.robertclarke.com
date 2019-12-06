@@ -6,14 +6,8 @@ Install Node packages
 npm install
 ```
 
-Make sure Gatbsy is installed
+Gatsby Develop
 
 ```
-npm install -g gatsby-cli
-
-```
-
-Build static files.
-```
-gatsby build
+./node_modules/.bin/gatsby develop
 ```
