@@ -40,7 +40,7 @@ jobs:
         AWS_REGION: "us-east-1"
         FROM_PATH: "./public/"
         DEST_PATH: "s3://${{ secrets.S3_BUCKET }}/"
-## Todo: Check that deleted files are also deleted on s3
+        OPTIONS: "--delete"
     - uses: jakejarvis/cloudflare-purge-action@master
       env:
         CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
