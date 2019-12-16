@@ -1,5 +1,5 @@
 # Good linter: http://www.yamllint.com/
-name: CD/CD
+name: CICD
 on: 
   push:
     branches:
