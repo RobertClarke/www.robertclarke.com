@@ -122,6 +122,34 @@ else
 EOT
 fi
 
+#############################################
+### Installs from Mac App Store
+#############################################
+
+echo "Installing apps from the App Store..."
+
+### find app ids with: mas search "app name"
+brew install mas
+
+### Mas login is currently broken on mojave. See:
+### Login manually for now.
+
+cecho "Need to log in to App Store manually to install apps with mas...." $red
+echo "Opening App Store. Please login."
+open "/Applications/App Store.app"
+echo "Is app store login complete.(y/n)? "
+read response
+if [ "$response" != "${response#[Yy]}" ]
+then
+	mas install 441258766  # Magnet
+	mas install 960276676 # taurine
+  mas install 924726344 # deliveries
+  mas install 1354318707 # core tunnel
+  mas install 1354319581 # core shell
+else
+	cecho "App Store login not complete. Skipping installing App Store Apps" $red
+fi
+
 
 ##############################
 # Install via Brew           #
@@ -135,7 +163,7 @@ brew cask install google-chrome
 brew cask install microsoft-office
 brew cask install dropbox
 brew cask install betterzip
-brew cask install muzzle # hide notifications while screen sharing
+brew cask install muzzle
 brew cask install cryptomator
 brew cask install veracrypt
 brew cask install rescuetime
@@ -211,45 +239,8 @@ brew cask install sonos
 brew cask install electrum
 brew cask install trezor-bridge
 
-### Add applications to login items
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Taurine.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Dropbox.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Scroll Reverser.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Magnet.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/RescueTime.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Muzzle.app", hidden:false}'
-
 ### Run Brew Cleanup
 brew cleanup
-
-
-#############################################
-### Installs from Mac App Store
-#############################################
-
-echo "Installing apps from the App Store..."
-
-### find app ids with: mas search "app name"
-brew install mas
-
-### Mas login is currently broken on mojave. See:
-### Login manually for now.
-
-cecho "Need to log in to App Store manually to install apps with mas...." $red
-echo "Opening App Store. Please login."
-open "/Applications/App Store.app"
-echo "Is app store login complete.(y/n)? "
-read response
-if [ "$response" != "${response#[Yy]}" ]
-then
-	mas install 441258766  # Magnet
-	mas install 960276676 # taurine
-  mas install 924726344 # deliveries
-  mas install 1354318707 # core tunnel
-  mas install 1354319581 # core shell
-else
-	cecho "App Store login not complete. Skipping installing App Store Apps" $red
-fi
 
 
 #############################################
@@ -259,6 +250,14 @@ fi
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
+
+### Add applications to login items
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Taurine.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Dropbox.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Scroll Reverser.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Magnet.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/RescueTime.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Muzzle.app", hidden:false}'
 
 
 ##################
@@ -377,12 +376,19 @@ fi
 ### Todo
 #############################################
 
+# Logins
+### Login to 1Password
 ### Login to Dropbox
 ### Login to Chrome
 ### Login to Google (email + etc.)
-### Change screen resolution
-### DNS over https (Cloudflared)
-### Configure tuarine (activate timer at launch)
 ### Login to Rescuetime
+### Configure tuarine (activate timer at launch)
+# System preferences
+### Change screen resolution
 ### Touch bar shows Expanded control strip
 ### Modifier keys -> caps lock -> escape
+# Chrome Logins
+### Login to Rescuetime on Chrome
+### Login to Honey on Chrome
+# Other
+### DNS over HTTPS (CloudflareD)
