@@ -382,3 +382,7 @@ fi
 ### Login to Google (email + etc.)
 ### Change screen resolution
 ### DNS over https (Cloudflared)
+### Configure tuarine (activate timer at launch)
+### Login to Rescuetime
+### Touch bar shows Expanded control strip
+### Modifier keys -> caps lock -> escape
