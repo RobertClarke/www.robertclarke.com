@@ -380,7 +380,7 @@ fi
 ### Login to 1Password
 ### Login to Dropbox
 ### Login to Chrome
-### Login to Google (email + etc.)
+### Login to Google (email + etc.) + set email sigs
 ### Login to Rescuetime
 ### Configure tuarine (activate timer at launch)
 # System preferences
