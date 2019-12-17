@@ -89,7 +89,6 @@ fi
 # Latest brew, install brew cask
 brew upgrade
 brew update
-brew tap caskroom/cask
 
 
 #############################################
@@ -124,54 +123,27 @@ EOT
 fi
 
 
-#############################################
-### Add ssh-key to GitHub via api
-#############################################
-
-echo "Adding ssh-key to GitHub (via api)..."
-echo "Important! For this step, use a github personal token with the admin:public_key permission."
-echo "If you don't have one, create it here: https://github.com/settings/tokens/new"
-
-retries=3
-SSH_KEY=`cat ~/.ssh/id_rsa.pub`
-
-for ((i=0; i<retries; i++)); do
-      read -p 'GitHub username: ' ghusername
-      read -p 'Machine name: ' ghtitle
-      read -sp 'GitHub personal token: ' ghtoken
-
-      gh_status_code=$(curl -o /dev/null -s -w "%{http_code}\n" -u "$ghusername:$ghtoken" -d '{"title":"'$ghtitle'","key":"'"$SSH_KEY"'"}' 'https://api.github.com/user/keys')
-
-      if (( $gh_status_code -eq == 201))
-      then
-          echo "GitHub ssh key added successfully!"
-          break
-      else
-			echo "Something went wrong. Enter your credentials and try again..."
-     		echo -n "Status code returned: "
-     		echo $gh_status_code
-      fi
-done
-
-[[ $retries -eq i ]] && echo "Adding ssh-key to GitHub failed! Try again later."
-
-
 ##############################
 # Install via Brew           #
 ##############################
 
 echo "Starting brew app install..."
 
-### Developer Tools
-brew install ispell
+### Productivity
+brew cask install 1password
+brew cask install google-chrome
+brew cask install microsoft-office
+brew cask install dropbox
+brew cask install betterzip
+brew cask install muzzle # hide notifications while screen sharing
+brew cask install cryptomator
+brew cask install veracrypt
+brew cask install rescuetime
+brew cask install proxifier
 
 ### Development
 brew cask install docker
 brew install docker-compose
-brew install postgresql
-brew install redis
-brew cask install mongodb
-brew cask install robo-3t
 brew install terraform
 brew install go
 brew install webpack
@@ -189,56 +161,28 @@ npm install -g serverless
 brew install git  # upgrade to latest
 brew install git-lfs # track large files in git https://github.com/git-lfs/git-lfs
 brew install wget
-brew install zsh # zshell
-brew install tmux
-brew install tree
-brew link curl --force
-brew install grep --with-default-names
-brew install trash  # move to osx trash instead of rm
-brew install less
+brew install grep
 brew install iftop
-brew install iotop
 brew install htop
 brew tap cjbassi/gotop
 brew install gotop
 brew install pre-commit
 
-
 # Git configure
 git config --global user.name "Robert Clarke"
 git config --global user.email "robert@rjfc.net"
 
-
 ### Python
 brew install python
-brew install pyenv
-
 
 ### Dev Editors 
 brew cask install visual-studio-code
-brew cask install pycharm
-brew cask install webstorm
 brew cask install sublime-text
 brew cask install fork
-
-
-### Productivity
-brew cask install 1password
-brew cask install google-chrome
-brew cask install microsoft-office
-brew cask install dropbox
-brew cask install betterzip
-brew cask install muzzle # hide notifications while screen sharing
-brew cask install cryptomator
-brew cask install veracrypt
-brew cask install rescuetime
-brew cask install proxifier
-
 
 ### Keyboard & Mouse
 brew cask install scroll-reverser  # allow natural scroll for trackpad, not for mouse
 defaults write com.pilotmoon.scroll-reverser ReverseTrackpad -bool false
-
 
 ### Quicklook plugins https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode # syntax highlighting in preview
@@ -248,7 +192,6 @@ brew cask install quicklook-json  # preview json files
 brew cask install epubquicklook  # preview epubs, make nice icons
 brew cask install quicklook-csv  # preview csvs
 
-
 ### Chat / Video Conference
 brew cask install slack
 brew cask install microsoft-teams
@@ -257,14 +200,12 @@ brew cask install signal
 brew cask install skype
 brew cask install discord
 
-
 ### Music, Video and Photo
 brew cask install vlc
 brew cask install adobe-creative-cloud
 brew cask install spotify
 brew tap homebrew/cask-drivers
 brew cask install sonos
-
 
 ### Cryptocurrency and Bitcoin
 brew cask install electrum
@@ -280,22 +221,6 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 
 ### Run Brew Cleanup
 brew cleanup
-
-
-#############################################
-### Fonts
-#############################################
-
-echo "Installing fonts..."
-
-brew tap caskroom/fonts
-
-### programming fonts
-brew cask install font-fira-mono-for-powerline
-brew cask install font-fira-code
-
-### SourceCodePro + Powerline + Awesome Regular (for powerlevel 9k terminal icons)
-cd ~/Library/Fonts && { curl -O 'https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro+Powerline+Awesome+Regular.ttf?raw=true' ; cd -; }
 
 
 #############################################
@@ -325,17 +250,6 @@ then
 else
 	cecho "App Store login not complete. Skipping installing App Store Apps" $red
 fi
-
-
-#############################################
-### Install few global python packages
-#############################################
-
-echo "Installing global Python packages..."
-
-pip3 install --upgrade pip
-pip3 install --user pylint
-pip3 install --user flake8
 
 
 #############################################
@@ -390,21 +304,6 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
-# Minimize windows into their application’s icon
-defaults write com.apple.dock minimize-to-application -bool true
-
-# Menu bar: hide the Time Machine, User icons, but show the volume Icon.
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
-		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-		"/System/Library/CoreServices/Menu Extras/User.menu"
-done
-defaults write com.apple.systemuiserver menuExtras -array \
-	"/System/Library/CoreServices/Menu Extras/Volume.menu" \
-	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
-	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 ##################
 ### Text Editing / Keyboards
@@ -478,4 +377,8 @@ fi
 ### Todo
 #############################################
 
+### Login to Dropbox
+### Login to Chrome
+### Login to Google (email + etc.)
+### Change screen resolution
 ### DNS over https (Cloudflared)
