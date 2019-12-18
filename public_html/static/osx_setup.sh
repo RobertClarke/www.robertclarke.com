@@ -389,6 +389,7 @@ fi
 ### Modifier keys -> caps lock -> escape
 ### Battery show percentage
 ### Time show seconds and show date
+### Show bluetooth in menu bar
 # Chrome Logins
 ### Login to Rescuetime on Chrome
 ### Login to Honey on Chrome
