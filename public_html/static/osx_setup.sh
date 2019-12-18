@@ -387,6 +387,8 @@ fi
 ### Change screen resolution
 ### Touch bar shows Expanded control strip
 ### Modifier keys -> caps lock -> escape
+### Battery show percentage
+### Time show seconds and show date
 # Chrome Logins
 ### Login to Rescuetime on Chrome
 ### Login to Honey on Chrome
