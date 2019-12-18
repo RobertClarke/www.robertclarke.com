@@ -390,6 +390,7 @@ fi
 ### Battery show percentage
 ### Time show seconds and show date
 ### Show bluetooth in menu bar
+### Show volume in menu bar
 # Chrome Logins
 ### Login to Rescuetime on Chrome
 ### Login to Honey on Chrome
