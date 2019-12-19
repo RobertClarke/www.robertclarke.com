@@ -382,6 +382,7 @@ fi
 ### Login to Chrome
 ### Login to Google (email + etc.) + set email sigs
 ### Login to Rescuetime
+### Login to deliveries
 ### Configure tuarine (activate timer at launch)
 # System preferences
 ### Change screen resolution
