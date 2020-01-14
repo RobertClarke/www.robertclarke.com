@@ -168,6 +168,7 @@ brew cask install cryptomator
 brew cask install veracrypt
 brew cask install rescuetime
 brew cask install proxifier
+brew cask install drawio
 
 ### Development
 brew cask install docker
