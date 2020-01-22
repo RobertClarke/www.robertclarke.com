@@ -190,6 +190,7 @@ npm install -g serverless
 brew install git  # upgrade to latest
 brew install git-lfs # track large files in git https://github.com/git-lfs/git-lfs
 brew install wget
+brew install rsync
 brew install grep
 brew install iftop
 brew install htop
