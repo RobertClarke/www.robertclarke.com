@@ -399,3 +399,4 @@ fi
 ### Login to Honey on Chrome
 # Other
 ### DNS over HTTPS (CloudflareD)
+### Set screenshot location to clipboard
