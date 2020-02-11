@@ -169,6 +169,7 @@ brew cask install veracrypt
 brew cask install rescuetime
 brew cask install proxifier
 brew cask install drawio
+brew cask install loom
 
 ### Development
 brew cask install docker
