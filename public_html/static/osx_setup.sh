@@ -283,8 +283,8 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# Only Show Open Applications In The Dock  
-defaults write com.apple.dock static-only -bool true
+# Don't show recent applications in dock  
+defaults write com.apple.dock show-recents -bool FALSE
 
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
