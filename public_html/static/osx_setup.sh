@@ -228,7 +228,7 @@ brew cask install quicklook-csv  # preview csvs
 brew cask install slack
 brew cask install microsoft-teams
 brew cask install zoomus
-brew cask install
+brew cask install amazon-chime
 brew cask install signal
 brew cask install skype
 brew cask install discord
