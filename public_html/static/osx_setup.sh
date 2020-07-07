@@ -167,7 +167,6 @@ brew cask install betterzip
 brew cask install muzzle
 brew cask install cryptomator
 brew cask install veracrypt
-brew cask install rescuetime
 brew cask install proxifier
 brew cask install drawio
 brew cask install loom
@@ -261,7 +260,6 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Dropbox.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Scroll Reverser.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Magnet.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/RescueTime.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Muzzle.app", hidden:false}'
 
 
@@ -386,7 +384,6 @@ fi
 ### Login to Dropbox
 ### Login to Chrome
 ### Login to Google (email + etc.) + set email sigs
-### Login to Rescuetime
 ### Login to deliveries
 ### Configure tuarine (activate timer at launch)
 # System preferences
@@ -398,7 +395,6 @@ fi
 ### Show bluetooth in menu bar
 ### Show volume in menu bar
 # Chrome Logins
-### Login to Rescuetime on Chrome
 ### Login to Honey on Chrome
 # Other
 ### DNS over HTTPS (CloudflareD)
