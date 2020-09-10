@@ -239,6 +239,7 @@ brew cask install adobe-creative-cloud
 brew cask install spotify
 brew tap homebrew/cask-drivers
 brew cask install sonos
+brew cask install iexplorer
 
 ### Cryptocurrency and Bitcoin
 brew cask install electrum
