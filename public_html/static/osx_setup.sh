@@ -146,6 +146,7 @@ then
   mas install 924726344 # deliveries
   mas install 1354318707 # core tunnel
   mas install 1354319581 # core shell
+  mas install 453164367 # systempal
 else
 	cecho "App Store login not complete. Skipping installing App Store Apps" $red
 fi
