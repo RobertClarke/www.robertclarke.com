@@ -179,6 +179,7 @@ brew install terraform
 brew install go
 brew install webpack
 brew install awscli
+brew cask install geekbench
 
 ### NPM
 brew install node
