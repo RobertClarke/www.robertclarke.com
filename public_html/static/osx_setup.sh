@@ -392,6 +392,7 @@ fi
 # System preferences
 ### Change screen resolution
 ### Touch bar shows Expanded control strip
+### Touchpad increase speed
 ### Modifier keys -> caps lock -> escape
 ### Battery show percentage
 ### Time show seconds and show date
