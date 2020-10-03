@@ -260,6 +260,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Magnet.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Muzzle.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/SystemPal.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/OneDrive.app", hidden:false}'
 
 
 ##################
@@ -381,6 +382,7 @@ fi
 # Logins
 ### Login to 1Password
 ### Login to Dropbox
+### Login to onedrive
 ### Disable Dropbox notification
 ### Login to Chrome
 ### Login to Google (email + etc.) + set email sigs
