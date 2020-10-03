@@ -216,9 +216,6 @@ brew cask install scroll-reverser  # allow natural scroll for trackpad, not for 
 defaults write com.pilotmoon.scroll-reverser ReverseTrackpad -bool false
 
 ### Quicklook plugins https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode # syntax highlighting in preview
-brew cask install qlstephen  # preview plaintext files without extension
-brew cask install qlmarkdown  # preview markdown files
 brew cask install quicklook-json  # preview json files
 brew cask install epubquicklook  # preview epubs, make nice icons
 brew cask install quicklook-csv  # preview csvs
