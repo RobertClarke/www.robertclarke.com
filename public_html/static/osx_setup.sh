@@ -262,6 +262,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Scroll Reverser.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Magnet.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Muzzle.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/SystemPal.app", hidden:false}'
 
 
 ##################
@@ -391,14 +392,10 @@ fi
 # System preferences
 ### Change screen resolution
 ### Touch bar shows Expanded control strip
-### Touchpad increase speed
-### Modifier keys -> caps lock -> escape
+### Touchpad increase speed (4th from right)
+### Modifier keys -> caps lock -> escape (only necessary on pre 16" MBP)
 ### Battery show percentage
 ### Time show seconds and show date
 ### Show bluetooth in menu bar
 ### Show volume in menu bar
-# Chrome Logins
-### Login to Honey on Chrome
-# Other
-### DNS over HTTPS (CloudflareD)
-### Set screenshot location to clipboard
+### Systempal show everything in menu bar
