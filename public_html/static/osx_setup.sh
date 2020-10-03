@@ -83,7 +83,7 @@ echo "Installing brew..."
 if test ! $(which brew)
 then
 	## Don't prompt for confirmation when installing homebrew
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Latest brew, install brew cask
@@ -143,10 +143,8 @@ if [ "$response" != "${response#[Yy]}" ]
 then
 	mas install 441258766  # Magnet
 	mas install 960276676 # taurine
-  mas install 924726344 # deliveries
-  mas install 1354318707 # core tunnel
-  mas install 1354319581 # core shell
-  mas install 453164367 # systempal
+	mas install 924726344 # deliveries
+	mas install 453164367 # systempal
 else
 	cecho "App Store login not complete. Skipping installing App Store Apps" $red
 fi
@@ -385,6 +383,7 @@ fi
 # Logins
 ### Login to 1Password
 ### Login to Dropbox
+### Disable Dropbox notification
 ### Login to Chrome
 ### Login to Google (email + etc.) + set email sigs
 ### Login to deliveries
