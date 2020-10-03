@@ -397,4 +397,4 @@ fi
 ### Time show seconds and show date
 ### Show bluetooth in menu bar
 ### Show volume in menu bar
-### Systempal show everything in menu bar
+### Systempal show everything in menu bar + temp in F
