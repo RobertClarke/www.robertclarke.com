@@ -145,6 +145,7 @@ then
 	mas install 960276676 # taurine
 	mas install 924726344 # deliveries
 	mas install 453164367 # systempal
+	mas install 1502839586 # handmirror
 else
 	cecho "App Store login not complete. Skipping installing App Store Apps" $red
 fi
