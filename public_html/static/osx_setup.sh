@@ -262,6 +262,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Muzzle.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/SystemPal.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/OneDrive.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Hand Mirror.app", hidden:false}'
 
 
 ##################
@@ -399,3 +400,5 @@ fi
 ### Show bluetooth in menu bar
 ### Show volume in menu bar
 ### Systempal show everything in menu bar + temp in F
+
+# Personal-only apps such as Onedrive + onedrive on boot
