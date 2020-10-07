@@ -170,6 +170,7 @@ brew cask install veracrypt
 brew cask install proxifier
 brew cask install drawio
 brew cask install loom
+brew cask install itsycal
 
 ### Development
 brew cask install docker
@@ -263,6 +264,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/SystemPal.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/OneDrive.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Hand Mirror.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Itsycal.app", hidden:false}'
 
 
 ##################
