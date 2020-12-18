@@ -96,6 +96,10 @@ brew update
 ### See: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 #############################################
 
+# change default editor to nano
+echo "export EDITOR=/usr/bin/nano" >> ~/.zshrc
+echo "export VISUAL=/usr/bin/nano" >> ~/.zshrc
+
 echo "Generating ssh keys, adding to ssh-agent..."
 read -p 'Input email for ssh key: ' useremail
 
