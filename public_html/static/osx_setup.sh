@@ -86,7 +86,7 @@ then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-# Latest brew, install brew cask
+# Latest brew, install brew 
 brew upgrade
 brew update
 
@@ -162,28 +162,28 @@ fi
 echo "Starting brew app install..."
 
 ### Productivity
-brew cask install 1password
-brew cask install google-chrome
-brew cask install brave-browser
-brew cask install microsoft-office
-brew cask install dropbox
-brew cask install betterzip
-brew cask install muzzle
-brew cask install cryptomator
-brew cask install veracrypt
-brew cask install proxifier
-brew cask install drawio
-brew cask install loom
-brew cask install itsycal
+brew install 1password
+brew install google-chrome
+brew install brave-browser
+brew install microsoft-office
+brew install dropbox
+brew install betterzip
+brew install muzzle
+brew install cryptomator
+brew install veracrypt
+brew install proxifier
+brew install drawio
+brew install loom
+brew install itsycal
 
 ### Development
-brew cask install docker
+brew install docker
 brew install docker-compose
 brew install terraform
 brew install go
 brew install webpack
 brew install awscli
-brew cask install geekbench
+brew install geekbench
 
 ### NPM
 brew install node
@@ -213,39 +213,39 @@ git config --global user.email "robert@rjfc.net"
 brew install python
 
 ### Dev Editors 
-brew cask install visual-studio-code
-brew cask install sublime-text
-brew cask install fork
+brew install visual-studio-code
+brew install sublime-text
+brew install fork
 
 ### Keyboard & Mouse
-brew cask install scroll-reverser  # allow natural scroll for trackpad, not for mouse
+brew install scroll-reverser  # allow natural scroll for trackpad, not for mouse
 defaults write com.pilotmoon.scroll-reverser ReverseTrackpad -bool false
 
 ### Quicklook plugins https://github.com/sindresorhus/quick-look-plugins
-brew cask install quicklook-json  # preview json files
-brew cask install epubquicklook  # preview epubs, make nice icons
-brew cask install quicklook-csv  # preview csvs
+brew install quicklook-json  # preview json files
+brew install epubquicklook  # preview epubs, make nice icons
+brew install quicklook-csv  # preview csvs
 
 ### Chat / Video Conference
-brew cask install slack
-brew cask install microsoft-teams
-brew cask install zoomus
-brew cask install amazon-chime
-brew cask install signal
-brew cask install skype
-brew cask install discord
+brew install slack
+brew install microsoft-teams
+brew install zoomus
+brew install amazon-chime
+brew install signal
+brew install skype
+brew install discord
 
 ### Music, Video and Photo
-brew cask install vlc
-brew cask install adobe-creative-cloud
-brew cask install spotify
+brew install vlc
+brew install adobe-creative-cloud
+brew install spotify
 brew tap homebrew/cask-drivers
-brew cask install sonos
-brew cask install iexplorer
+brew install sonos
+brew install iexplorer
 
 ### Cryptocurrency and Bitcoin
-brew cask install electrum
-brew cask install trezor-bridge
+brew install electrum
+brew install trezor-bridge
 
 ### Run Brew Cleanup
 brew cleanup
