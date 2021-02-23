@@ -406,5 +406,6 @@ fi
 ### Show bluetooth in menu bar
 ### Show volume in menu bar
 ### Systempal show everything in menu bar + temp in F
+### Show Emoji in menu bar
 
 # Personal-only apps such as Onedrive + onedrive on boot
