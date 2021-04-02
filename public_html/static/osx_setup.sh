@@ -150,6 +150,7 @@ then
 	mas install 924726344 # deliveries
 	mas install 453164367 # systempal
 	mas install 1502839586 # handmirror
+	mas install 668208984  # GIPHY Capture. The GIF Maker (For recording my screen as gif)
 else
 	cecho "App Store login not complete. Skipping installing App Store Apps" $red
 fi
@@ -175,6 +176,7 @@ brew install proxifier
 brew install drawio
 brew install loom
 brew install itsycal
+brew install keycastr  # show key presses on screen (for gifs & screencasts)
 
 ### Development
 brew install docker
