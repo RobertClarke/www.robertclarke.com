@@ -51,7 +51,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Currently doing <a href="https://www.linkedin.com/in/robertjfclarke/">program management</a> for Amazon Devices in Seattle. I like to document my travels on <a href="https://www.instagram.com/robertjfclarke/">Instagram</a> and share my thoughts on <a href="https://twitter.com/robertjfclarke">Twitter</a>.
+        Currently doing <a href="https://www.linkedin.com/in/robertjfclarke/">program management</a> for Amazon Devices in Seattle. I like to document my travels on <a href="https://www.instagram.com/robertjfclarke/">Instagram</a>, share my thoughts on <a href="https://twitter.com/robertjfclarke">Twitter</a>, and brag about my KOMs on <a href="https://www.strava.com/athletes/23825310">Strava</a>.
       </p>
     </div>
   )
